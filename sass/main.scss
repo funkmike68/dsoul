@@ -1,6 +1,10 @@
 @import "abstracts/var";
 
+@import "base/base";
+@import "base/type";
+
 @import "components/carousel";
+@import "components/weather";
 
 @import "layout/nav";
 

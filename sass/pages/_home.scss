@@ -1,11 +1,79 @@
-.weatherwidget-io {
-  margin-top: 90px;
-  padding-bottom: 20px;
+.culture-card img {
+  width: 100%;
+  display: block;
 }
 
-/* MEDIA */
-@media only screen and (max-width: 1080px) {
-  .weatherwidget-io {
-    margin-top: 75px;
+.culture-title {
+  text-align: center;
+  color: $clr-purple-one;
+}
+
+.culture-card {
+  margin: 0 0 2rem;
+  // background: $clr-grey-10;
+  border-radius: $radius;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: $transition;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
+}
+
+.culture-img {
+  height: 24rem;
+  object-fit: cover;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+.culture-info {
+  text-align: center;
+  padding: 1rem;
+
+  & h4 {
+    max-width: 20rem;
+    font-family: Cabin;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $clr-black;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .culture-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    /* 100% 45% 90% 5% */
+  }
+
+  .culture-info {
+    & h4 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .culture-card {
+    width: 30%;
+    margin: 1.5%;
+    justify-content: center;
+    /* 100% 30% 3.333% */
+  }
+
+  .culture-info {
+    & h4 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.culture-img-container {
+  position: relative;
 }
