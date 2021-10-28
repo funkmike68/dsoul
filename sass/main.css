@@ -1,0 +1,108 @@
+.w-100 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100% !important;
+  height: 87.5vh;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1280px) {
+  .w-100 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 85vh !important;
+  }
+  img.responsive {
+    width: 300px;
+  }
+  #carouselExampleIndicators {
+    margin-top: -11px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .w-100 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 48vh !important;
+  }
+  img.responsive {
+    width: 250px;
+  }
+  #carouselExampleIndicators {
+    margin-top: -11px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .w-100 {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 30vh !important;
+  }
+  img.responsive {
+    width: 250px;
+  }
+  #carouselExampleIndicators {
+    margin-top: -22px;
+  }
+}
+
+.navbar {
+  padding: 15px;
+}
+
+.navbar-brand {
+  width: 150px !important;
+  font-size: 1.5rem;
+}
+
+.navbar-brand img {
+  height: 50px !important;
+  float: left;
+  margin-right: 7px;
+}
+
+.navbar-dark {
+  background: #170055 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown-menu .dropdown-item {
+  text-transform: uppercase;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1080px) {
+  .navbar-brand {
+    width: 150px !important;
+    font-size: 2rem;
+  }
+  .navbar-brand img {
+    height: 35px !important;
+    float: left;
+    margin-right: 7px;
+  }
+}
+
+.weatherwidget-io {
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1080px) {
+  .weatherwidget-io {
+    margin-top: 75px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
