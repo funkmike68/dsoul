@@ -209,6 +209,10 @@ p {
   }
 }
 
+.culture {
+  margin-bottom: -4rem;
+}
+
 .culture-card img {
   width: 100%;
   display: block;
@@ -220,7 +224,7 @@ p {
 }
 
 .culture-card {
-  margin: 0 0 2rem;
+  margin: 0;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -286,6 +290,86 @@ p {
 }
 
 .culture-img-container {
+  position: relative;
+}
+
+.cuisine-card img {
+  width: 100%;
+  display: block;
+}
+
+.cuisine-title {
+  text-align: center;
+  color: #3e065f;
+}
+
+.cuisine-card {
+  margin: 0 0 2rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cuisine-card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cuisine-img {
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.cuisine-info {
+  text-align: center;
+  padding: 1rem;
+}
+
+.cuisine-info h4 {
+  max-width: 20rem;
+  font-family: Cabin;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .cuisine-card {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    /* 100% 45% 90% 5% */
+  }
+  .cuisine-info h4 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cuisine-card {
+    width: 30%;
+    margin: 1.5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* 100% 30% 3.333% */
+  }
+  .cuisine-info h4 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+.cuisine-img-container {
   position: relative;
 }
 /*# sourceMappingURL=main.css.map */
