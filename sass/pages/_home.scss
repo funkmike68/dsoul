@@ -13,8 +13,7 @@
 }
 
 .culture-card {
-  margin: 0;
-  // background: $clr-grey-10;
+  margin: 0 0 2rem;
   border-radius: $radius;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: $transition;
@@ -65,7 +64,7 @@
 @media screen and (min-width: 992px) {
   .culture-card {
     width: 30%;
-    margin: 1.5%;
+    margin: 1.66%;
     justify-content: center;
     /* 100% 30% 3.333% */
   }
@@ -94,7 +93,6 @@
 
 .cuisine-card {
   margin: 0 0 2rem;
-  // background: $clr-grey-10;
   border-radius: $radius;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: $transition;
@@ -145,7 +143,7 @@
 @media screen and (min-width: 992px) {
   .cuisine-card {
     width: 30%;
-    margin: 1.5%;
+    margin: 1.66%;
     justify-content: center;
     /* 100% 30% 3.333% */
   }
