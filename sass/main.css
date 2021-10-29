@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +136,52 @@ h4 {
   }
 }
 
+@-webkit-keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
 .navbar {
   padding: 15px;
 }
@@ -220,6 +266,54 @@ footer .name {
   }
 }
 
+/* WELCOME SECTION */
+.welcome {
+  margin: 4rem 2rem;
+}
+
+.welcome-title {
+  text-align: center;
+  color: #3e065f;
+  /* animation */
+  -webkit-animation: slideFromLeft 5s ease-in-out 1;
+          animation: slideFromLeft 5s ease-in-out 1;
+}
+
+.welcome-title h2 {
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+
+.welcome-title h2 .exclamation {
+  color: #ff0000;
+}
+
+.intro {
+  margin-top: 5rem;
+}
+
+.intro h3 {
+  color: #536162;
+  font-size: 1.4rem;
+  font-family: Cabin;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+}
+
+.intro h3 .intro-welcome {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #170055;
+}
+
+.intro h3 .felipe {
+  color: #170055;
+}
+
+/* CULTURE SECTION */
 .culture {
   margin-bottom: -4rem;
 }
@@ -279,10 +373,6 @@ footer .name {
     margin-right: 5%;
     /* 100% 45% 90% 5% */
   }
-  .culture-info h4 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -294,16 +384,13 @@ footer .name {
             justify-content: center;
     /* 100% 30% 3.333% */
   }
-  .culture-info h4 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
 }
 
 .culture-img-container {
   position: relative;
 }
 
+/* CUISINE SECTION */
 .cuisine-card img {
   width: 100%;
   display: block;
@@ -359,10 +446,6 @@ footer .name {
     margin-right: 5%;
     /* 100% 45% 90% 5% */
   }
-  .cuisine-info h4 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -374,13 +457,35 @@ footer .name {
             justify-content: center;
     /* 100% 30% 3.333% */
   }
-  .cuisine-info h4 {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
 }
 
 .cuisine-img-container {
   position: relative;
+}
+
+/* OTHER MEDIA */
+@media screen and (min-width: 300px) {
+  .welcome-title h2 {
+    font-size: 3.15rem;
+  }
+  .intro h3 {
+    font-size: 1.25rem;
+  }
+  .intro h3 .intro-welcome {
+    font-size: 1.45rem;
+  }
+  .section-title h1 {
+    font-family: Cabin;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  .culture-info h4 {
+    font-size: 1.6rem;
+    padding: 0.4rem;
+  }
+  .cuisine-info h4 {
+    font-size: 1.6rem;
+    padding: 0.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
