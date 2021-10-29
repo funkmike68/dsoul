@@ -1,3 +1,50 @@
+/* WELCOME SECTION */
+.welcome {
+  margin: 4rem 2rem;
+}
+
+.welcome-title {
+  text-align: center;
+  color: $clr-purple-one;
+  /* animation */
+  animation: slideFromLeft 5s ease-in-out 1;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+    font-size: 4rem;
+    letter-spacing: 5px;
+
+    & .exclamation {
+      color: $clr-warm-red;
+    }
+  }
+}
+
+.intro {
+  margin-top: 5rem;
+
+  h3 {
+    color: $clr-grey-3;
+    font-size: 1.4rem;
+    font-family: Cabin;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+
+    .intro-welcome {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: $clr-blue-one;
+    }
+
+    .felipe {
+      color: $clr-blue-one;
+    }
+  }
+}
+
+/* CULTURE SECTION */
 .culture {
   margin-bottom: -4rem;
 }
@@ -52,13 +99,6 @@
     margin-right: 5%;
     /* 100% 45% 90% 5% */
   }
-
-  .culture-info {
-    & h4 {
-      font-size: 1.5rem;
-      padding: 0.5rem;
-    }
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -68,19 +108,13 @@
     justify-content: center;
     /* 100% 30% 3.333% */
   }
-
-  .culture-info {
-    & h4 {
-      font-size: 1.5rem;
-      padding: 0.5rem;
-    }
-  }
 }
 
 .culture-img-container {
   position: relative;
 }
 
+/* CUISINE SECTION */
 .cuisine-card img {
   width: 100%;
   display: block;
@@ -131,13 +165,6 @@
     margin-right: 5%;
     /* 100% 45% 90% 5% */
   }
-
-  .cuisine-info {
-    & h4 {
-      font-size: 1.5rem;
-      padding: 0.5rem;
-    }
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -147,15 +174,47 @@
     justify-content: center;
     /* 100% 30% 3.333% */
   }
-
-  .cuisine-info {
-    & h4 {
-      font-size: 1.5rem;
-      padding: 0.5rem;
-    }
-  }
 }
 
 .cuisine-img-container {
   position: relative;
+}
+
+/* OTHER MEDIA */
+@media screen and (min-width: 300px) {
+  .welcome-title {
+    h2 {
+      font-size: 3.15rem;
+    }
+  }
+
+  .intro {
+    h3 {
+      font-size: 1.25rem;
+
+      .intro-welcome {
+        font-size: 1.45rem;
+      }
+    }
+  }
+
+  .section-title h1 {
+    font-family: Cabin;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  .culture-info {
+    & h4 {
+      font-size: 1.6rem;
+      padding: 0.4rem;
+    }
+  }
+
+  .cuisine-info {
+    & h4 {
+      font-size: 1.6rem;
+      padding: 0.4rem;
+    }
+  }
 }
