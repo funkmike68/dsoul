@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
-
-body {
-  font-family: Cabin;
-  //color: $clr-grey-1;
-  line-height: 1.5;
-  font-size: 0.875rem;
-}
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500;700&display=swap");
 
 a {
   text-decoration: none;
@@ -19,24 +12,4 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 0.875rem;
-}
-
-p {
-  margin-bottom: 1.25rem;
 }
