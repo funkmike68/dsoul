@@ -37,28 +37,18 @@
   display: table;
 }
 
-.section-title {
-  margin: 2rem 0 -4rem 0;
-}
-
 .section-title h1 {
+  margin: 3rem 0 -1rem 0;
   font-family: Cabin;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 .section-center {
-  padding: 4rem 0;
+  padding: 2rem 0;
   width: 100%;
   margin: 0 auto !important;
   max-width: 1170px;
-}
-
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-    padding: 4rem 1rem;
-  }
 }
 
 a {
@@ -268,7 +258,7 @@ footer .name {
 
 /* WELCOME SECTION */
 .welcome {
-  margin: 4rem 2rem;
+  margin: 4rem 2rem 0 2rem;
 }
 
 .welcome-title {
@@ -291,7 +281,7 @@ footer .name {
 }
 
 .intro {
-  margin-top: 5rem;
+  margin: 1rem 0 2rem 0;
 }
 
 .intro h3 {
@@ -338,6 +328,7 @@ footer .name {
 }
 
 .culture-card:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -411,6 +402,7 @@ footer .name {
 }
 
 .cuisine-card:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -463,6 +455,79 @@ footer .name {
   position: relative;
 }
 
+/* T2D SECTION */
+.card-deck {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.card-deck .card {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.card-deck .card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-deck .card .card-body {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.card-deck .card .card-body .card-title {
+  font-size: 3rem;
+  font-family: Cabin;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dine {
+  color: #fff;
+  background: #09009b;
+}
+
+.dine:hover {
+  color: #f7ea00;
+}
+
+.explore {
+  color: #fff;
+  background: #ff0000;
+}
+
+.explore:hover {
+  color: #f7ea00;
+}
+
+.relax {
+  color: #fff;
+  background: #0f00ff;
+}
+
+.relax:hover {
+  color: #f7ea00;
+}
+
+.shop {
+  color: #fff;
+  background: #3e065f;
+}
+
+.shop:hover {
+  color: #f7ea00;
+}
+
 /* OTHER MEDIA */
 @media screen and (min-width: 300px) {
   .welcome-title h2 {
@@ -486,6 +551,36 @@ footer .name {
   .cuisine-info h4 {
     font-size: 1.6rem;
     padding: 0.4rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .card-deck .card .card-body .card-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .card-deck .card .card-body .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .card-deck {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  .card-deck .card .card-body .card-title {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
