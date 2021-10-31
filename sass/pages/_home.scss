@@ -1,6 +1,6 @@
 /* WELCOME SECTION */
 .welcome {
-  margin: 4rem 2rem;
+  margin: 4rem 2rem 0 2rem;
 }
 
 .welcome-title {
@@ -22,7 +22,7 @@
 }
 
 .intro {
-  margin-top: 5rem;
+  margin: 1rem 0 2rem 0;
 
   h3 {
     color: $clr-grey-3;
@@ -66,6 +66,7 @@
   transition: $transition;
 
   &:hover {
+    cursor: $curser;
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
@@ -132,6 +133,7 @@
   transition: $transition;
 
   &:hover {
+    cursor: $curser;
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
@@ -180,6 +182,67 @@
   position: relative;
 }
 
+/* T2D SECTION */
+.card-deck {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  .card {
+    border-radius: $radius;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: $transition;
+    &:hover {
+      cursor: $curser;
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .card-body {
+      border-bottom-left-radius: $radius;
+      border-bottom-right-radius: $radius;
+      .card-title {
+        font-size: 3rem;
+        font-family: Cabin;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.dine {
+  color: $clr-white;
+  background: $clr-blue-two;
+  &:hover {
+    color: $clr-yellow-two;
+  }
+}
+
+.explore {
+  color: $clr-white;
+  background: $clr-warm-red;
+  &:hover {
+    color: $clr-yellow-two;
+  }
+}
+
+.relax {
+  color: $clr-white;
+  background: $clr-blue-three;
+  &:hover {
+    color: $clr-yellow-two;
+  }
+}
+
+.shop {
+  color: $clr-white;
+  background: $clr-purple-one;
+  &:hover {
+    color: $clr-yellow-two;
+  }
+}
+
 /* OTHER MEDIA */
 @media screen and (min-width: 300px) {
   .welcome-title {
@@ -215,6 +278,48 @@
     & h4 {
       font-size: 1.6rem;
       padding: 0.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    .card {
+      .card-body {
+        .card-title {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-deck {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    .card {
+      .card-body {
+        .card-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .card-deck {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    .card {
+      .card-body {
+        .card-title {
+          font-size: 2.5rem;
+        }
+      }
     }
   }
 }
