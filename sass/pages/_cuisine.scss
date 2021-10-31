@@ -1,0 +1,44 @@
+.cuisine_2 {
+  margin-top: 6rem;
+}
+
+.cuisine-title_2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: $clr-purple-one;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.majarete {
+  color: $clr-purple-one;
+  background: $clr-white;
+}
+
+.card a {
+  text-decoration: none;
+  color: $clr-warm-red;
+  &:hover {
+    color: $clr-purple-two;
+  }
+}
+
+.majarete_2 {
+  font-size: 1.5rem;
+  line-height: 0.75;
+}
+
+.majarete_3 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.recipe {
+  font-size: 1.75rem;
+  line-height: 0.5;
+  color: $clr-warm-red;
+  &:hover {
+    color: $clr-purple-two;
+  }
+}

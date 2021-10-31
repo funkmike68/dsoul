@@ -576,11 +576,59 @@ footer .name {
 
 @media screen and (min-width: 1260px) {
   .card-deck {
-    margin-right: 4rem;
-    margin-left: 4rem;
+    margin-right: 4.5rem;
+    margin-left: 4.5rem;
   }
   .card-deck .card .card-body .card-title {
     font-size: 2.5rem;
   }
+}
+
+.cuisine_2 {
+  margin-top: 6rem;
+}
+
+.cuisine-title_2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #3e065f;
+}
+
+.cuisine-title_2 h1 {
+  font-size: 3rem;
+}
+
+.majarete {
+  color: #3e065f;
+  background: #fff;
+}
+
+.card a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.card a:hover {
+  color: #ed50f1;
+}
+
+.majarete_2 {
+  font-size: 1.5rem;
+  line-height: 0.75;
+}
+
+.majarete_3 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.recipe {
+  font-size: 1.75rem;
+  line-height: 0.5;
+  color: #ff0000;
+}
+
+.recipe:hover {
+  color: #ed50f1;
 }
 /*# sourceMappingURL=main.css.map */
