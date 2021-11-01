@@ -1,9 +1,9 @@
-.cabarete-page {
+.sosua-page {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-.cabarete-title {
+.sosua-title {
   font-family: Bebas Neue;
   margin: 10rem 0 2rem 0;
   text-align: center;
@@ -13,7 +13,7 @@
   }
 }
 
-.cabarete-info {
+.sosua-info {
   padding: 10px;
   & h2 {
     font-size: 1.875rem;
@@ -35,15 +35,20 @@
   }
 }
 
+.all {
+  font-size: 1.25rem;
+  color: $clr-blue-three;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 800px) {
-  .cabarete-page {
+  .sosua-page {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .cabarete-title {
+  .sosua-title {
     & h1 {
       font-size: 2.75rem;
     }
