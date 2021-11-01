@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&family=Concert+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -464,9 +464,10 @@ footer .name {
 }
 
 .card-deck .card {
-  border-radius: 0.5rem;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 !important;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -475,13 +476,9 @@ footer .name {
   cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-deck .card .card-body {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
 .card-deck .card .card-body .card-title {
@@ -630,5 +627,130 @@ footer .name {
 
 .recipe:hover {
   color: #ed50f1;
+}
+
+.ghaffar {
+  margin: 5.6rem 6rem 2rem 6rem;
+}
+
+header img {
+  width: 100%;
+  height: 75vh;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ghaffar_heading {
+  margin: 3rem 6rem;
+}
+
+.title {
+  font-family: Concert One;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.sub {
+  font-size: 1.5rem;
+  font-family: Cabin;
+  font-weight: 400;
+  text-align: center;
+}
+
+.ghaffar_blog h3 {
+  margin: 3rem 6rem 1rem 6rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: Cabin;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.ghaffar_pic {
+  border: 4px solid #fff;
+}
+
+.also_cards {
+  margin-bottom: 6rem;
+}
+
+.also h1 {
+  margin: 1rem 6rem 1rem 6rem;
+  font-size: 2rem;
+  font-family: Cabin;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.also-info {
+  text-align: center;
+  padding: 10px;
+}
+
+.also-info h4 {
+  font-family: Cabin;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.also-info a {
+  color: #000;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1080px) {
+  .ghaffar {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+  header img {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ghaffar {
+    margin: 4rem 0 2rem 0;
+  }
+  header img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ghaffar {
+    margin: 4rem 0 2rem 0;
+  }
+  header img {
+    height: 35vh;
+  }
+  .ghaffar_heading {
+    margin: 5rem 1.5rem;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .ghaffar_blog {
+    margin: 1rem;
+  }
+  .ghaffar_blog h3 {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+  .also-info {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .also-info h4 {
+    font-size: 1.5rem;
+  }
+  .also h1 {
+    font-size: 1.75rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
