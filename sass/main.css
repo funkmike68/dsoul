@@ -611,7 +611,7 @@ footer .name {
 
 .cabarete-info h2 p {
   color: #000;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   padding-top: 15px;
 }
 
@@ -621,6 +621,17 @@ footer .name {
 
 .cabarete-info h2 p .fa-globe {
   color: #0f00ff;
+}
+
+/* MEDIA */
+@media screen and (max-width: 800px) {
+  .cabarete-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .cabarete-title h1 {
+    font-size: 2.75rem;
+  }
 }
 
 .cuisine_2 {
@@ -834,6 +845,64 @@ header img {
   }
   .also h1 {
     font-size: 1.75rem;
+  }
+}
+
+.sosua-page {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.sosua-title {
+  font-family: Bebas Neue;
+  margin: 10rem 0 2rem 0;
+  text-align: center;
+  color: #3e065f;
+}
+
+.sosua-title h1 {
+  font-size: 3.5rem;
+}
+
+.sosua-info {
+  padding: 10px;
+}
+
+.sosua-info h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 5px 0;
+  color: #170055;
+}
+
+.sosua-info h2 p {
+  color: #000;
+  font-size: 1.1rem;
+  padding-top: 15px;
+}
+
+.sosua-info h2 p .fa-mobile {
+  color: #ff0000;
+}
+
+.sosua-info h2 p .fa-globe {
+  color: #0f00ff;
+}
+
+.all {
+  font-size: 1.25rem;
+  color: #0f00ff;
+}
+
+/* MEDIA */
+@media screen and (max-width: 800px) {
+  .sosua-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .sosua-title h1 {
+    font-size: 2.75rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
