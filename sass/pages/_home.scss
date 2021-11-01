@@ -189,17 +189,22 @@
   margin-bottom: 4rem;
   margin-top: 1rem;
   .card {
-    border-radius: $radius;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    //border: none;
+    border-radius: 0 !important;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
     transition: $transition;
     &:hover {
       cursor: $curser;
       transform: scale(1.02);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
     }
     .card-body {
-      border-bottom-left-radius: $radius;
-      border-bottom-right-radius: $radius;
+      //border-bottom-left-radius: $radius;
+      //border-bottom-right-radius: $radius;
       .card-title {
         font-size: 3rem;
         font-family: Cabin;
