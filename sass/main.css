@@ -629,6 +629,47 @@ footer .name {
   color: #ed50f1;
 }
 
+.culture-page {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.culture-title_2 {
+  margin: 8rem 0 2rem 0;
+  text-align: center;
+  color: #3e065f;
+}
+
+.culture-title_2 h1 {
+  font-size: 3rem;
+}
+
+.culture-info-2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.culture-info-2 h4 {
+  font-family: Cabin;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.culture-info-2 a {
+  color: #000;
+}
+
+/* MEDIA */
+@media screen and (max-width: 800px) {
+  .culture-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .ghaffar {
   margin: 5.6rem 6rem 2rem 6rem;
 }
