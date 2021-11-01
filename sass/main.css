@@ -581,6 +581,48 @@ footer .name {
   }
 }
 
+.cabarete-page {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cabarete-title {
+  font-family: Bebas Neue;
+  margin: 10rem 0 2rem 0;
+  text-align: center;
+  color: #3e065f;
+}
+
+.cabarete-title h1 {
+  font-size: 3.5rem;
+}
+
+.cabarete-info {
+  padding: 10px;
+}
+
+.cabarete-info h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 5px 0;
+  color: #170055;
+}
+
+.cabarete-info h2 p {
+  color: #000;
+  font-size: 1.25rem;
+  padding-top: 15px;
+}
+
+.cabarete-info h2 p .fa-mobile {
+  color: #ff0000;
+}
+
+.cabarete-info h2 p .fa-globe {
+  color: #0f00ff;
+}
+
 .cuisine_2 {
   margin-top: 6rem;
 }

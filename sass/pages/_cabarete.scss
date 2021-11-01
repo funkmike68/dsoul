@@ -1,0 +1,36 @@
+.cabarete-page {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.cabarete-title {
+  font-family: Bebas Neue;
+  margin: 10rem 0 2rem 0;
+  text-align: center;
+  color: $clr-purple-one;
+  & h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.cabarete-info {
+  padding: 10px;
+  & h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 5px 0;
+    color: $clr-blue-one;
+    & p {
+      color: $clr-black;
+      font-size: 1.25rem;
+      padding-top: 15px;
+      & .fa-mobile {
+        color: $clr-warm-red;
+      }
+      & .fa-globe {
+        color: $clr-blue-three;
+      }
+    }
+  }
+}
