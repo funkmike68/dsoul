@@ -1,0 +1,40 @@
+.culture-page {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.culture-title_2 {
+  margin: 8rem 0 2rem 0;
+  text-align: center;
+  color: $clr-purple-one;
+  & h1 {
+    font-size: 3rem;
+  }
+}
+
+.culture-info-2 {
+  text-align: center;
+  padding: 10px;
+
+  & h4 {
+    font-family: Cabin;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: $clr-black;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  & a {
+    color: $clr-black;
+  }
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 800px) {
+  .culture-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
