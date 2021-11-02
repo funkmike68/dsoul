@@ -1,21 +1,25 @@
-.sosua-page {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.puerto-page {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.sosua-title {
+.puerto-title {
   font-family: Bebas Neue;
   margin: 10rem 0 2rem 0;
   text-align: center;
   color: $clr-purple-one;
   & h1 {
     font-size: 3.5rem;
+    line-height: 1;
   }
 }
 
-.sosua-info {
-  box-shadow: none !important;
+.puerto-info {
   padding: 10px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
   & h2 {
     font-size: 1.875rem;
     text-align: center;
@@ -24,7 +28,7 @@
     color: $clr-blue-one;
     & p {
       color: $clr-black;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       padding-top: 15px;
       & .fa-mobile {
         color: $clr-warm-red;
@@ -41,17 +45,21 @@
   color: $clr-blue-three;
 }
 
+.puerto {
+  margin: 2rem 0;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 800px) {
-  .sosua-page {
+  .puerto-page {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .sosua-title {
+  .puerto-title {
     & h1 {
-      font-size: 2.75rem;
+      font-size: 3.25rem;
     }
   }
 }
