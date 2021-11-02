@@ -3,7 +3,8 @@ footer {
   background: $clr-blue-one;
   text-align: center;
   padding: 2.5rem;
-  width: 100%;
+  position: absolute;
+  width: 100% !important;
 
   .name {
     color: $clr-yellow-one;
