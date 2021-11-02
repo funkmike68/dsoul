@@ -34,6 +34,14 @@ header img {
   font-family: Cabin;
   font-weight: 400;
   text-transform: none;
+
+  & a {
+    text-decoration: none;
+    color: $clr-blue-two;
+    &:hover {
+      color: $clr-purple-two;
+    }
+  }
 }
 
 .ghaffar_pic {
