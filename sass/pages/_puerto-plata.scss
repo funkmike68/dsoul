@@ -17,8 +17,9 @@
 .puerto-info {
   padding: 10px;
   &:hover {
-    cursor: pointer;
-    transform: scale(1.02);
+    cursor: $curser;
+    transform: $transform;
+    transition: $transition;
   }
   & h2 {
     font-size: 1.875rem;
