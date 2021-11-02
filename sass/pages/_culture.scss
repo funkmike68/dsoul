@@ -17,6 +17,12 @@
   text-align: center;
   padding: 10px;
 
+  &:hover {
+    cursor: $curser;
+    transform: $transform;
+    transition: $transition;
+  }
+
   & h4 {
     font-family: Cabin;
     font-size: 1.55rem;

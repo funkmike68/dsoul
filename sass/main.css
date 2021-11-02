@@ -707,6 +707,14 @@ footer .name {
   padding: 10px;
 }
 
+.culture-info-2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .culture-info-2 h4 {
   font-family: Cabin;
   font-size: 1.55rem;
@@ -789,6 +797,14 @@ header img {
           box-shadow: none !important;
   text-align: center;
   padding: 10px;
+}
+
+.also-info:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .also-info h4 {
@@ -940,6 +956,8 @@ header img {
   cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .puerto-info h2 {
