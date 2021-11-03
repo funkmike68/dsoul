@@ -3,42 +3,58 @@
 }
 
 .cuisine-title_2 {
-  margin-bottom: 2rem;
+  margin: 8rem 0 2rem 0;
   text-align: center;
   color: $clr-purple-one;
-  h1 {
+  & h1 {
     font-size: 3rem;
   }
 }
 
-.majarete {
-  color: $clr-purple-one;
-  background: $clr-white;
-}
+.cuisine-info-2 {
+  box-shadow: none !important;
+  text-align: center;
+  padding: 10px;
 
-.card a {
-  text-decoration: none;
-  color: $clr-warm-red;
   &:hover {
-    color: $clr-purple-two;
+    cursor: $curser;
+    transform: $transform;
+    transition: $transition;
+  }
+
+  & h4 {
+    font-family: Cabin;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: $clr-black;
+    margin: 0 auto;
+    padding-top: 10px;
+
+    & a {
+      color: $clr-black;
+      text-decoration: none;
+      &:hover {
+        color: $clr-purple-two;
+      }
+    }
+    & .recipe {
+      font-size: 1.4rem;
+      line-height: 0.5;
+      & a {
+        color: $clr-warm-red;
+        &:hover {
+          color: $clr-purple-two;
+        }
+      }
+    }
   }
 }
 
-.majarete_2 {
-  font-size: 1.5rem;
-  line-height: 0.75;
-}
+/* MEDIA */
 
-.majarete_3 {
-  font-size: 2rem;
-  line-height: 1.25;
-}
-
-.recipe {
-  font-size: 1.75rem;
-  line-height: 0.5;
-  color: $clr-warm-red;
-  &:hover {
-    color: $clr-purple-two;
+@media screen and (max-width: 800px) {
+  .cuisine-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
