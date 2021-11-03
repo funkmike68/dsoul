@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&family=Concert+One&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&family=Concert+One&family=Patua+One&family=Staatliches&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -772,7 +772,7 @@ header img {
   margin: 3rem 6rem;
 }
 
-.title {
+.ghaffar_heading .title {
   font-family: Concert One;
   text-align: center;
   font-size: 4rem;
@@ -1124,6 +1124,107 @@ header img {
   .senor_blog h3 {
     margin-right: 1rem;
     margin-left: 1rem;
+  }
+}
+
+.sancocho {
+  margin: 5.6rem 6rem 2rem 6rem;
+}
+
+header img {
+  width: 100%;
+  height: 65vh;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sancocho_heading {
+  margin: 3rem 6rem;
+}
+
+.sancocho_heading .title {
+  font-family: Patua One;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: 10px;
+}
+
+.sancocho_recipe h3 {
+  margin: 3rem 12rem 1rem 12rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: Cabin;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.sancocho_recipe h3 a {
+  text-decoration: none;
+  color: #09009b;
+}
+
+.sancocho_recipe h3 a:hover {
+  color: #ed50f1;
+}
+
+.sancocho_recipe h3 ol > li::marker {
+  font-weight: 700;
+  color: #0f00ff;
+}
+
+.sancocho_recipe h3 li {
+  margin-left: 3rem;
+}
+
+.instructions_2 {
+  font-size: 2rem;
+  color: #ff0000;
+  text-align: center;
+}
+
+.fa-star {
+  color: #3e065f;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1080px) {
+  .sancocho {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+  header img {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sancocho {
+    margin: 4rem 0 2rem 0;
+  }
+  header img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sancocho {
+    margin: 4rem 0 2rem 0;
+  }
+  header img {
+    height: 35vh;
+  }
+  .sancocho_heading {
+    margin: 5rem 1.5rem;
+  }
+  .sancocho_heading .title {
+    font-size: 3.5rem;
+  }
+  .sancocho_recipe {
+    margin: 1rem;
+  }
+  .sancocho_recipe h3 {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

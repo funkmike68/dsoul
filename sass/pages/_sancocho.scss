@@ -1,0 +1,103 @@
+.sancocho {
+  margin: 5.6rem 6rem 2rem 6rem;
+}
+
+header img {
+  width: 100%;
+  height: 65vh;
+  display: block;
+  object-fit: cover;
+}
+
+.sancocho_heading {
+  margin: 3rem 6rem;
+  & .title {
+    font-family: Patua One;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 10px;
+  }
+}
+
+.sancocho_recipe h3 {
+  margin: 3rem 12rem 1rem 12rem;
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: Cabin;
+  font-weight: 400;
+  text-transform: none;
+
+  & a {
+    text-decoration: none;
+    color: $clr-blue-two;
+    &:hover {
+      color: $clr-purple-two;
+    }
+  }
+  & ol > li::marker {
+    font-weight: 700;
+    color: $clr-blue-three;
+  }
+
+  & li {
+    margin-left: 3rem;
+  }
+}
+
+.instructions_2 {
+  font-size: 2rem;
+  color: $clr-warm-red;
+  text-align: center;
+}
+
+.fa-star {
+  color: $clr-purple-one;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1080px) {
+  .sancocho {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+
+  header img {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sancocho {
+    margin: 4rem 0 2rem 0;
+  }
+
+  header img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sancocho {
+    margin: 4rem 0 2rem 0;
+  }
+
+  header img {
+    height: 35vh;
+  }
+
+  .sancocho_heading {
+    margin: 5rem 1.5rem;
+
+    & .title {
+      font-size: 3.5rem;
+    }
+  }
+
+  .sancocho_recipe {
+    margin: 1rem;
+
+    & h3 {
+      margin-right: 1.25rem;
+      margin-left: 1.25rem;
+    }
+  }
+}
