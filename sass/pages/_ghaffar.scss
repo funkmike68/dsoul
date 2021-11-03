@@ -11,13 +11,13 @@ header img {
 
 .ghaffar_heading {
   margin: 3rem 6rem;
-}
 
-.title {
-  font-family: Concert One;
-  text-align: center;
-  font-size: 4rem;
-  padding-bottom: 10px;
+  & .title {
+    font-family: Concert One;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 10px;
+  }
 }
 
 .sub {
