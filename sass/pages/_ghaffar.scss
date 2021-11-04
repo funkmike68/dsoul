@@ -82,7 +82,17 @@ header img {
   }
 
   & a {
-    color: $clr-black;
+    text-decoration: none;
+    &:hover {
+      color: $clr-purple-two;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $clr-purple-one;
+    &:hover {
+      color: $clr-purple-two;
+    }
   }
 }
 
