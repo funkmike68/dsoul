@@ -33,6 +33,12 @@
         color: $clr-blue-three;
       }
     }
+    & a {
+      text-decoration: none;
+      &:hover {
+        color: $clr-purple-two;
+      }
+    }
   }
 }
 
