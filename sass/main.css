@@ -1306,4 +1306,46 @@ header img {
 .golf-info h2 a:hover {
   color: #ed50f1;
 }
+
+.tours-info {
+  padding: 10px;
+}
+
+.tours-info:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tours-info h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 5px 0;
+  color: #170055;
+}
+
+.tours-info h2 p {
+  color: #000;
+  font-size: 1.05rem;
+  padding-top: 15px;
+}
+
+.tours-info h2 p .fa-mobile {
+  color: #ff0000;
+}
+
+.tours-info h2 p .fa-globe {
+  color: #0f00ff;
+}
+
+.tours-info h2 a {
+  text-decoration: none;
+}
+
+.tours-info h2 a:hover {
+  color: #ed50f1;
+}
 /*# sourceMappingURL=main.css.map */
