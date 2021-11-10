@@ -11,6 +11,15 @@
   }
 }
 
+.cuisine-title_3 {
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+  color: $clr-purple-one;
+  & h1 {
+    font-size: 3rem;
+  }
+}
+
 .cuisine-info-2 {
   box-shadow: none !important;
   text-align: center;

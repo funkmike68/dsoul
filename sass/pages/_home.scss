@@ -1,6 +1,6 @@
 /* WELCOME SECTION */
 .welcome {
-  margin: 4rem 2rem 0 2rem;
+  margin: 4rem 0 2rem;
 }
 
 .welcome-title {
@@ -9,10 +9,10 @@
   /* animation */
   animation: slideFromLeft 5s ease-in-out 1;
 
-  h2 {
+  & h2 {
     text-transform: uppercase;
     font-family: Bebas Neue;
-    font-size: 4rem;
+    font-size: 4rem !important;
     letter-spacing: 5px;
 
     & .exclamation {
@@ -44,215 +44,40 @@
   }
 }
 
-/* CULTURE SECTION */
-.culture {
-  margin-bottom: -4rem;
-}
-
-.culture-card img {
-  width: 100%;
-  display: block;
-}
-
-.culture-title {
-  text-align: center;
-  color: $clr-purple-one;
-}
-
-.culture-card {
-  margin: 0 0 2rem;
-  border-radius: $radius;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: $transition;
-
-  &:hover {
-    cursor: $curser;
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.culture-img {
-  height: 24rem;
-  object-fit: cover;
-  border-top-left-radius: $radius;
-  border-top-right-radius: $radius;
-}
-
-.culture-info {
-  text-align: center;
-  padding: 1rem;
-
-  & h4 {
-    max-width: 20rem;
-    font-family: Cabin;
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: $clr-black;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .culture-card {
-    float: left;
-    width: 45%;
-    margin-right: 5%;
-    /* 100% 45% 90% 5% */
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .culture-card {
-    width: 30%;
-    margin: 1.66%;
-    justify-content: center;
-    /* 100% 30% 3.333% */
-  }
-}
-
-.culture-img-container {
-  position: relative;
-}
-
-/* CUISINE SECTION */
-.cuisine-card img {
-  width: 100%;
-  display: block;
-}
-
-.cuisine-title {
-  text-align: center;
-  color: $clr-purple-one;
-}
-
-.cuisine-card {
-  margin: 0 0 2rem;
-  border-radius: $radius;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: $transition;
-
-  &:hover {
-    cursor: $curser;
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.cuisine-img {
-  height: 24rem;
-  object-fit: cover;
-  border-top-left-radius: $radius;
-  border-top-right-radius: $radius;
-}
-
-.cuisine-info {
-  text-align: center;
-  padding: 1rem;
-
-  & h4 {
-    max-width: 20rem;
-    font-family: Cabin;
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: $clr-black;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .cuisine-card {
-    float: left;
-    width: 45%;
-    margin-right: 5%;
-    /* 100% 45% 90% 5% */
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .cuisine-card {
-    width: 30%;
-    margin: 1.66%;
-    justify-content: center;
-    /* 100% 30% 3.333% */
-  }
-}
-
-.cuisine-img-container {
-  position: relative;
-}
-
 /* T2D SECTION */
-.card-deck {
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-bottom: 4rem;
-  margin-top: 1rem;
-  .card {
-    //border: none;
-    border-radius: 0 !important;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-    transition: $transition;
+
+.card {
+  .card-body {
+    color: $clr-white;
+    background: $clr-purple-one;
+    border-top: solid 2px $clr-purple-one;
     &:hover {
-      cursor: $curser;
-      transform: scale(1.02);
-      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-      -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
-      -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.35);
+      color: $clr-yellow-two;
     }
-    .card-body {
-      //border-bottom-left-radius: $radius;
-      //border-bottom-right-radius: $radius;
-      .card-title {
-        font-size: 3rem;
-        font-family: Cabin;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-      }
+
+    .card-title {
+      font-size: 2.15rem;
+      font-family: Cabin;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
     }
-  }
-}
-
-.dine {
-  color: $clr-white;
-  background: $clr-blue-two;
-  &:hover {
-    color: $clr-yellow-two;
-  }
-}
-
-.explore {
-  color: $clr-white;
-  background: $clr-warm-red;
-  &:hover {
-    color: $clr-yellow-two;
-  }
-}
-
-.relax {
-  color: $clr-white;
-  background: $clr-blue-three;
-  &:hover {
-    color: $clr-yellow-two;
-  }
-}
-
-.shop {
-  color: $clr-white;
-  background: $clr-purple-one;
-  &:hover {
-    color: $clr-yellow-two;
   }
 }
 
 /* OTHER MEDIA */
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 800px) {
   .welcome-title {
     h2 {
-      font-size: 3.15rem;
+      font-size: 3.25rem !important;
+    }
+  }
+
+  .card {
+    .card-body {
+      .card-title {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -262,68 +87,6 @@
 
       .intro-welcome {
         font-size: 1.45rem;
-      }
-    }
-  }
-
-  .section-title h1 {
-    font-family: Cabin;
-    font-size: 2.25rem;
-    font-weight: 700;
-  }
-
-  .culture-info {
-    & h4 {
-      font-size: 1.6rem;
-      padding: 0.4rem;
-    }
-  }
-
-  .cuisine-info {
-    & h4 {
-      font-size: 1.6rem;
-      padding: 0.4rem;
-    }
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .card-deck {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    .card {
-      .card-body {
-        .card-title {
-          font-size: 2.5rem;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card-deck {
-    margin-right: 1rem;
-    margin-left: 1rem;
-    .card {
-      .card-body {
-        .card-title {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1260px) {
-  .card-deck {
-    margin-right: 4.5rem;
-    margin-left: 4.5rem;
-    .card {
-      .card-body {
-        .card-title {
-          font-size: 2.5rem;
-        }
       }
     }
   }
