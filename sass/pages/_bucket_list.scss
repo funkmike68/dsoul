@@ -1,0 +1,55 @@
+.header {
+  margin-top: 4.5rem;
+  padding-bottom: 20px;
+}
+
+.social2 {
+  max-width: 100%;
+}
+
+.blog {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 0px 10px 0px;
+
+  h3 {
+    font-family: Cabin;
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  h1 {
+    font-family: Bubblegum Sans;
+    font-size: 3rem;
+  }
+
+  .plan {
+    border: 5px solid $clr-white;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    box-shadow: $box-shadow;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.umbrella {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .blog {
+    margin: 0 12.5px;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
