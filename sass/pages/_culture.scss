@@ -43,6 +43,11 @@
 
   & a {
     color: $clr-black;
+    text-decoration: none;
+
+    &:hover {
+      color: $clr-purple-two;
+    }
   }
 }
 

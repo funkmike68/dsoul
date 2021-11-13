@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;700&family=Concert+One&family=Lalezar&family=Patua+One&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&family=Cabin:wght@400;500;700&family=Concert+One&family=Lalezar&family=Patua+One&family=Staatliches&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -531,6 +531,11 @@ footer .name {
 
 .culture-info-2 a {
   color: #000;
+  text-decoration: none;
+}
+
+.culture-info-2 a:hover {
+  color: #ed50f1;
 }
 
 /* MEDIA */
@@ -899,7 +904,8 @@ header img {
 }
 
 .senor_pic {
-  border: 6px solid #fff;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* MEDIA */
@@ -1271,5 +1277,64 @@ p .instructions_2 {
   padding-top: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.header {
+  margin-top: 4.5rem;
+  padding-bottom: 20px;
+}
+
+.social2 {
+  max-width: 100%;
+}
+
+.blog {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 0px 10px 0px;
+}
+
+.blog h3 {
+  font-family: Cabin;
+}
+
+.blog h3 p {
+  font-size: 1.4rem !important;
+}
+
+.blog h1 {
+  font-family: Bubblegum Sans;
+  font-size: 3rem;
+}
+
+.blog .plan {
+  border: 5px solid #fff;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.blog a {
+  text-decoration: none;
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.umbrella {
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .blog {
+    margin: 0 12.5px;
+  }
+  .text {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
