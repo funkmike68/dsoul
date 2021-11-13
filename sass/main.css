@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&family=Cabin:wght@400;500;700&family=Concert+One&family=Lalezar&family=Patua+One&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bubblegum+Sans&family=Cabin:wght@400;500;700&family=Concert+One&family=Lalezar&family=Mansalva&family=Patua+One&family=Staatliches&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1308,6 +1308,11 @@ p .instructions_2 {
   font-size: 3rem;
 }
 
+.blog .dish {
+  font-family: Mansalva;
+  font-size: 3.25rem;
+}
+
 .blog .plan {
   border: 5px solid #fff;
   float: right;
@@ -1323,6 +1328,10 @@ p .instructions_2 {
 
 .text {
   font-size: 1.2rem;
+}
+
+.text2 {
+  font-size: 1.6rem;
 }
 
 .umbrella {
