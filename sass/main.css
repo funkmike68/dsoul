@@ -1074,6 +1074,7 @@ header img {
   color: #000;
   font-size: 1.25rem;
   padding-top: 15px;
+  text-transform: none;
 }
 
 .golf-info h2 p .fa-mobile {
@@ -1090,6 +1091,10 @@ header img {
 
 .golf-info h2 a:hover {
   color: #ed50f1;
+}
+
+.email {
+  font-size: 1rem;
 }
 
 .tours-info {

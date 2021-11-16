@@ -15,6 +15,7 @@
       color: $clr-black;
       font-size: 1.25rem;
       padding-top: 15px;
+      text-transform: none;
       & .fa-mobile {
         color: $clr-warm-red;
       }
@@ -29,4 +30,8 @@
       }
     }
   }
+}
+
+.email {
+  font-size: 1rem;
 }
