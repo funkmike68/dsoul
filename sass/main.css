@@ -1339,6 +1339,10 @@ p .instructions_2 {
   font-size: 1.6rem;
 }
 
+.text3 {
+  font-size: 1.4rem;
+}
+
 .umbrella {
   margin-bottom: 5rem;
 }
@@ -1351,6 +1355,9 @@ p .instructions_2 {
     font-size: 1rem;
   }
   .text2 {
+    font-size: 1.3rem;
+  }
+  .text3 {
     font-size: 1.3rem;
   }
 }
