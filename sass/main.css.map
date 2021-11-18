@@ -24,7 +24,8 @@
         "pages/_tours.scss",
         "pages/_majarete.scss",
         "pages/_video.scss",
-        "pages/_bucket_list.scss"
+        "pages/_bucket_list.scss",
+        "pages/_contact.scss"
     ],
     "names": [],
     "file": "main.css"
