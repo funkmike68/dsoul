@@ -1,3 +1,41 @@
+<?php
+
+
+if ($_POST['submit']) {
+	
+	if (!$_POST['name']) {
+		$error="<br/>- Please enter your name";
+	}
+	
+	if (!$_POST['email']) {
+		$error.="<br/>- Please enter your email";
+	}
+	
+	if (!$_POST['message']) {
+		$error.="<br/>- Please enter a message";
+	}
+	
+	if (!$_POST['check']) {
+		$error.="<br/>- Please confirm you are human";
+	}
+	
+	if ($error) {
+		$results='<div class="alert alert-danger" role="alert"><strong>Sorry, there is an error.</strong> Please correct the following: '.$error.' </div';
+	} else {
+		mail("mike@dominicansoul.com", "Contact message", "Name: ".$_POST['name'].
+			"Email: ".$_POST['email'].
+			"Message: ".$_POST['message']);
+		{
+		$results='<div class="alert alert-success" role="alert"><stron>Thank you! We will get back in touch with you shortly.</div>';
+		}
+	}
+}
+		   
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +61,7 @@
     <link rel="shortcut icon" href="/images/favicon_1.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Senor Rock In Puerto Plata</title>
+    <title>Contact Us</title>
 
         <!-- Google -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -35,6 +73,46 @@
         </script>
         <!-- End Google -->
 
+        <style>
+          #contact {
+            padding: 40px 0;
+            color: #140660;
+            margin-top: 6rem;
+          }
+
+          #contact .btn-default {
+            border: 1px solid #f9d902;
+            background-color: #f9d902;
+            border-radius: 0;
+          }
+
+          #contact .btn-default:hover {
+            color: #f9d902;
+            background-color: #140660;
+          }
+
+          .row {
+            text-align: center;
+          }
+
+          form {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .welcome {
+            color: #020f84;
+            font-family: Cabin;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+          }
+        </style>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -108,113 +186,74 @@
         </form>
       </div>
     </nav>
-
-    <div class="container">
-    <div class="senor">
-      <header>
-        <div>
-          <img src="./images/SenorRock.jpg" alt="Senor Rock Art">
-        </div>
-      </header>
-    </div>
-
-    <div class="senor_heading">
-      <h1 class="title"><strong>The Señor Rock Bar And Grill</strong></h1>
-    </div>
-
-    <div class="senor_blog">
-      <h3>
-        <p>By <strong>PAOLA GARCIA</strong> | November 02, 2021</p><br><br>
-
-        
-        <p>The <strong><span class="site">Señor Rock Bar and Grill</span></strong> is a combination restaurant, pop/rock museum, and sports bar located in Puerto Plata's Playa Dorada Mall. It's just a short walking distance from both Playa Dorada Beach and the resort complex.</p><br>
-
-        
-        <p>When you first walk into <strong><span class="site">Señor Rock</span></strong> you can't help but notice its cool decor. First, there's their trademark purple, life-sized replica, 1957 Chevy Bel Air Convertible that hangs high above their spacious rectangular bar. Then there are the restaurant's walls which are adorned with pop and rock and roll memorabilia from some of the greatest artists of all time. The items of Rihanna, Elvis, Bob Marley, John Lennon, Jimi Hendrix, and many, many others decorate the walls. Señor Rock is literally a miniature rock and roll museum and hall of fame.</p><br>
-
-
-        <div class="card-deck">
-          <div class="card senor_pic mb-4">
-            <img src="./images/senore_rock02.jpg" class="card-img-top" alt="Senor Rock, Puerto Plata">
-          </div>
-          <div class="card senor_pic mb-4">
-            <img src="./images/senore_rock03.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-          </div>
-        </div>
-        
-        <p>Now just because you're away from home on a trip, that doesn't mean you have to miss that big game, fight or sporting event. Sports fans, <strong><span class="site">Señor Rock</span></strong> has you covered! Watch live NBA, NFL, NHL, NCAA, MLB, and the UFC all on their big screen.</p><br>
-      
-        <div class="card-deck">
-          <div class="card senor_pic mb-4">
-            <img src="./images/senore_rock04.jpg" class="card-img-top" alt="Senor Rock, Puerto Plata">
-          </div>
-          <div class="card senor_pic mb-4">
-            <img src="./images/senore_rock05.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-          </div>
-        </div>
-        
-        <p>If you are looking for a change of pace from your resort's food or if you just want to try out a nice, casual restaurant with delicious food, visit <strong><span class="site">Señor Rock</span></strong>. They offer a nice variety of reasonably priced appetizers, hamburgers, chicken and pasta dishes, steaks, seafood and my personal favorite, the barbequed ribs.</p><br>
             
-        <div class="card-deck">
-          <div class="card senor_pic mb-4">
-            <img src="./images/burger.jpg" class="card-img-top" alt="Senor Rock, Puerto Plata">
-          </div>
-          <div class="card senor_pic mb-4">
-            <img src="./images/corona.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-          </div>
-          <div class="card senor_pic mb-4">
-            <img src="./images/ribs.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-          </div>
-          <div class="card senor_pic mb-4">
-            <img src="./images/presidente.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-          </div>
-        </div>
-                
-        <p><strong><span class="site">Señor Rock</span></strong> also offers a wide selection of alcoholic beverages. Try out the local favorite, Presidente Beer or choose from the numerous selection of imported beers they carry. Try out their house favorite the CoronaRita or any of their other outstanding cocktails and margaritas.</p><br>
-        
-        <p>So the next time you're in <strong>Puerto Plata</strong>, pay <strong><span class="site">The Señor Rock Bar and Grill</span></strong> a visit. They are conveniently located in the Playa Dorada Mall right next to the resorts and the beach. It's decor and music memorabilia make it a great place to visit and take pictures. The numerous sports packages it carries make it a great place to go watch sporting events. Plus they serve a variety of reasonably priced, tasty food and drinks that hit the spot.<br><br>
-
-          <div class="card-deck">
-            <div class="card senor_pic mb-4">
-              <img src="./images/senore_rock01.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-            </div>
-            <div class="card senor_pic mb-4">
-              <img src="./images/senore_rock06.jpg" class="card-img-top explore2" alt="Senor Rock, Puerto Plata">
-            </div>
-          </div>
-        
-        <p><a href="https://senorrock.weebly.com">senorrock.weebly.com</a></p>
-        <p>Until next time. Besos!</p><br>
-
-        <p><a href="mailto:paola@dominicansoul.com">paola@dominicansoul.com</a></p><br>
-      
-      </h3>
-    </div>
-
-    <div class="also">
-      <div>
-        <h1>you may also like:</h1>
-      </div>
-      <div class="card-deck also_cards">
-        <div class="card also-info">
-          <a href="sancocho.html"><img src="./images/sancocho_3.jpg" class="card-img-top" alt="Sancocho"></a>
-          <h4><a href="sancocho.html">CHICKEN<br>
-            SANCOCHO</a></h4>
-        </div><br>
-        <div class="card also-info">
-          <a href="ghaffar.html"><img src="./images/ghaffar.jpg" class="card-img-top" alt="Puerto Plata"></a>
-          <h4><a href="ghaffar.html">THE PASSION<br>
-            OF GHAFFAR</a></h4>
-        </div><br>
-        <div class="card also-info">
-          <a href="bucket_list.html"><img src="./images/10_Things_4.jpg" class="card-img-top" alt="Puerto Plata"></a>
-          <h4><a href="bucket_list.html">PUERTO PLATA'S<br>
-            BUDGET FRIENDLY 10</a></h4>
-        </div>
-      </div>
-    </div>
-  </div>
     
+    <div class="container">
+      <section id="contact">
+      
+        <div class="row row-cols-1 row-cols-md-1">
+          <h1 class="welcome">Contact Us</h1> 
+          <div class="col">
+            <?php echo $results;?>
+            <p class="text-center"><strong>Questions and comments are welcome. mike@dominicansoul.com</strong></p>
+            <form method="post" role="form">
+              <div class="form-group">
+	              <input type="text" name="name" class="form-control" placeholder="Your Name" value="<?php $_POST['name']; ?>">
+              </div>
+
+              <div class="form-group">
+		            <input type="email" name="email" class="form-control" placeholder="Your Email" value="<?php echo $_POST['email']; ?>">
+	            </div>
+
+              <div class="form-group">
+	              <textarea name="message" rows="8" class="form-control" placeholder="Message..."><?php echo $_POST['message']; ?></textarea>
+              </div>
+
+              <div class="checkbox">
+	              <label>
+		              <input type="checkbox" name="check"> I am human
+	              </label>
+              </div>
+
+              <div align="center">
+	              <input type="submit" name="submit" class="btn btn-default" value="send message"/>
+              </div>
+
+            </form>
+          </div>                                
+        </div>
+        
+      </section>    
+                  
+        <div class="also puerto">
+          <div>
+            <h1>you may also like:</h1>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+              <div class="card also-info">
+                <a href="bucket_list.html"><img src="./images/10_Things_4.jpg" class="card-img-top" alt="Things To Do In Puerto Plata"></a>
+                <h4><a href="bucket_list.html">PUERTO PLATA'S<br>
+                 BUDGET FRIENDLY 10</a></h4>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card also-info">
+                <a href="morir_sonando.html"><img src="./images/morir_4.jpg" class="card-img-top" alt="Morir Sonando Recipe"></a>
+                <h4><a href="morir_sonando.html">MORIR SONANDO<br>
+                  "TO DIE DREAMING"</a></h4>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card also-info">
+                <a href="ghaffar.html"><img src="./images/ghaffar.jpg" class="card-img-top" alt="Photography In Puerto Plata"></a>
+                <h4><a href="ghaffar.html">THE PASSION<br>
+                  OF GHAFFAR</a></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
 
     <!-- footer -->
     <footer>
