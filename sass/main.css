@@ -1361,4 +1361,30 @@ p .instructions_2 {
     font-size: 1.3rem;
   }
 }
+
+.dot {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.row1 {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  background: url("/images/watermelon-background_2.jpg") no-repeat;
+  background-size: cover;
+}
+
+.row2 {
+  margin: 30px 60px;
+}
 /*# sourceMappingURL=main.css.map */
