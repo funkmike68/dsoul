@@ -44,6 +44,40 @@
   }
 }
 
+.blog-info {
+  box-shadow: none !important;
+  text-align: left;
+  padding: 10px;
+
+  &:hover {
+    cursor: $curser;
+    transform: $transform;
+    transition: $transition;
+  }
+
+  & h4 {
+    font-family: Cabin;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $clr-black;
+    margin: 0 auto;
+    padding-top: 10px;
+    & p {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  & a {
+    color: $clr-black;
+    text-decoration: none;
+
+    &:hover {
+      color: $clr-purple-two;
+    }
+  }
+}
+
 /* T2D SECTION */
 
 .card {
